@@ -1,0 +1,10 @@
+name: snps
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - star=2.7.1a
+  - samtools=1.9
+  - bcftools>=1.9
+  - vcftools
+  - r-base

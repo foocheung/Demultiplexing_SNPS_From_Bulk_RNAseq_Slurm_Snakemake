@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+
+#module load micromamba/1.4.2-gxd6hpa
+#module load snakemake
+
+
+#snakemake --use-conda  -j 50  --cluster-config /hpcdata/chi/PROJECTS_Archive/2022_CHI_PROPOSALS/TEMP_SEQ_FROM_SKYLINE/cluster_config_threaded.json --cluster "qsub -terse -l quick,avx2,mem_free={cluster.mem_free},h_vmem={cluster.h_vmem} {cluster.parallel_opts}" -s /hpcdata/chi/PROJECTS_Archive/2022_CHI_PROPOSALS/TEMP_SEQ_FROM_SKYLINE/Snakefile_hpc4
+
+
+
+snakemake --use-conda -j 50 --cluster-config /data/chi/PROJECTS/TEMP/BULK_RNA_SEQUENCING/240627_VH00286_149_AACCG3YHV/TEST3/cluster_config_threaded.json --cluster "sbatch --mem={cluster.mem} --cpus-per-task={cluster.cpus-per-task} --job-name={cluster.job-name}" -s /data/chi/PROJECTS/TEMP/BULK_RNA_SEQUENCING/240627_VH00286_149_AACCG3YHV/TEST3/Snakefile_hpc
+
+#snakemake --use-conda -j 50 --cluster-config /data/chi/PROJECTS/TEMP/BULK_RNA_SEQUENCING/240627_VH00286_149_AACCG3YHV/TEST/cluster_config_threaded.json --cluster "sbatch --mem={cluster.mem_free} --cpus-per-task={cluster.cpus} --time={cluster.time} --job-name={cluster.name}" -s /data/chi/PROJECTS/TEMP/BULK_RNA_SEQUENCING/240627_VH00286_149_AACCG3YHV/TEST/Snakefile_hpc
+
