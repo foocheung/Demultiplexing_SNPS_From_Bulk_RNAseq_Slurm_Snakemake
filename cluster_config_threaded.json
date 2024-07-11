@@ -1,0 +1,23 @@
+{
+    "__default__": {
+        "mem": "40G",
+        "cpus-per-task": "2",
+        "job-name": "snakemake_job"
+    },
+    "pass1": {
+        "mem": "40G",
+        "cpus-per-task": "2",
+        "job-name": "pass1_job"
+    },
+    "sort": {
+        "mem": "40G",
+        "cpus-per-task": "2",
+        "job-name": "sort_job"
+    },
+    "mpileup": {
+        "mem": "300G",
+        "cpus-per-task": "1",
+        "job-name": "mpileup_job"
+    }
+}
+
