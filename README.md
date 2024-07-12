@@ -5,7 +5,7 @@
 - conda env create -f environment.yml
 
 - conda activate snps
-- module load r-ggplot
+- module load r-ggplot2
 - module load r
 
 ## Submit job
