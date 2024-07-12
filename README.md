@@ -11,16 +11,6 @@
 ## Submit job
 - sbatch sm_call
 
-## Run Somalier
-- mkdir SOM
-- ./run_somalier
-
-## Ancestry
-- ./somalier ancestry --labels ancestry-labels-1kg.tsv 1kg-somalier/*.somalier ++ SOM/*.somalier
-
-## Relate
-- ./somalier relate SOM/*.somalier
-
 
 ## To list samples in vcf file
 bcftools query -l hg19_snp15_markdup_309.vcf
