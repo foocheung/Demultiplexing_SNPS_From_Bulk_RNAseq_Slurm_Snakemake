@@ -10,8 +10,3 @@
 
 ## Submit job
 - sbatch sm_call
-
-
-## To list samples in vcf file
-bcftools query -l hg19_snp15_markdup_309.vcf
-
