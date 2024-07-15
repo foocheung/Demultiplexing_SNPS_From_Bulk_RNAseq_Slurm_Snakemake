@@ -131,8 +131,8 @@ rule relatedness:
             outdir = 'ALIGN/out2.txt.relatedness2'
 #	conda: "environment.yml"
         shell:
-            'vcftools --vcf ALIGN/hg19_snp15_markdup_309.vcf --out ALIGN/out2.txt --relatedness2'
-
+#            'vcftools --vcf ALIGN/hg19_snp15_markdup_309.vcf --out ALIGN/out2.txt --relatedness2'
+             'vcftools --vcf ALIGN/hg19_snp15_markdup_309.vcf --out ALIGN/out2.txt --relatedness'
 #heatmap Rscript ./heatmap_related3.R ./ALIGN/out.txt.relatedness2 ./ALIGN/out.pdf
 rule heatmap:
         input:
